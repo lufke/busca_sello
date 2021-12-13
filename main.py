@@ -65,7 +65,7 @@ def busca_sello(codigo):
 
 def obtener_sellos():
     print(Fore.YELLOW + f'Iniciando desde {inicio}' + Fore.RESET)
-    for codigo in range(inicio, inicio + 10):
+    for codigo in range(inicio, 9999999999999+1):
         busca_sello(codigo)
 
 
