@@ -68,9 +68,10 @@ def obtener_sellos():
     for codigo in range(inicio, 9999999999999+1):
         busca_sello(codigo)
 
-
-"sched = BlockingScheduler(timezone="America/Santiago")
-"sched.add_job(obtener_sellos, 'cron', day_of_week='mon', hour=6, minute=15)
-"sched.start()
+"""
+sched = BlockingScheduler(timezone="America/Santiago")
+sched.add_job(obtener_sellos, 'cron', day_of_week='mon', hour=6, minute=15)
+sched.start()
+"""
 
 obtener_sellos()
