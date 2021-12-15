@@ -69,6 +69,8 @@ def obtener_sellos():
         busca_sello(codigo)
 
 
-sched = BlockingScheduler(timezone="America/Santiago")
-sched.add_job(obtener_sellos, 'cron', day_of_week='mon', hour=6, minute=15)
-sched.start()
+"sched = BlockingScheduler(timezone="America/Santiago")
+"sched.add_job(obtener_sellos, 'cron', day_of_week='mon', hour=6, minute=15)
+"sched.start()
+
+obtener_sellos()
